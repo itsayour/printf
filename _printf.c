@@ -25,6 +25,22 @@ int _printf(const char *format, ...)
 				char *string = va_arg(args, char *);
 				cmp += handle_string(string);
 			}
+			else if (*format == '%')
+			{
+				_putchar('%');
+				cmp++;
+			}
+			else
+			{
+				_putchar('%');
+				cmp++;
+				if (*format)
+				{
+					_putchar(*format);
+					cmp++;
+				}
+			}
+			format++;
 		}
 		return (cmp);
 	}
