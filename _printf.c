@@ -20,6 +20,11 @@ int _printf(const char *format, ...)
 				_putchar(c);
 				cmp++
 			}
+			else if (*format == 's')
+			{
+				char *string = va_arg(args, char *);
+				cmp += handle_string(string);
+			}
 		}
 		return (cmp);
 	}
