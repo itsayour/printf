@@ -42,6 +42,13 @@ int _printf(const char *format, ...)
 			}
 			format++;
 		}
-		return (cmp);
+		else
+		{
+			_putchar(*format);
+			format++;
+			cmp++;
+		}
 	}
+	va_end(args);
+	return (cmp);
 }
