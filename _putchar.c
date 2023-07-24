@@ -1,8 +1,7 @@
 /**
  * _putchar - writes the character c
  * @c: The character to print
- * Return: On success 1
- * On error, -1 is returned
+ * Return: void
  */
 
 void _putchar(char c)
