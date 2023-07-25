@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 			cmp += _putchar(*format);
 			format++;
 		}
-		va_end(args);
 	}
+	va_end(args);
 	return (cmp);
 }
