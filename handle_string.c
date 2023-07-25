@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * handle_string - counting number of character in a string
  * @str: string
