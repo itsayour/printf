@@ -19,6 +19,8 @@ int specifier_handler(char c, va_list args)
 	}
 	else if (c == '%')
 		count = _putchar(c);
+	else if (c == '\0')
+		count += _putchar(c);
 	else
 	{
 		count += _putchar('%');
