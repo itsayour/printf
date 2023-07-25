@@ -8,7 +8,7 @@
 int specifier_handler(char c, va_list args)
 {
 	int count = 0;
-	
+
 	if (c == 'c')
 		count = _putchar(va_arg(args, int));
 	else if (c == 's')
