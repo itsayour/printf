@@ -14,8 +14,7 @@ int handle_string(char *str)
 		handle_string("(null)");
 		count += 6;
 		return (count);
-	}
-
+	}	
 	while (str[count])
 	{
 		_putchar(str[count]);
