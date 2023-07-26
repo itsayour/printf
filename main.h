@@ -10,5 +10,6 @@ int _putchar(char c);
 int specifier_handler(char c, va_list args);
 int _printf(const char *format, ...);
 int handle_number(int num);
+int len_num(int number);
 
 #endif

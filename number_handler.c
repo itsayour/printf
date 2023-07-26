@@ -16,7 +16,6 @@ int handle_number(int num)
 	else if (num < 0)
 	{
 		_putchar('-');
-		count++;
 		num = -num;
 	}
 	if (num >= 10)

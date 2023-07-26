@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 /**
  * len_num - function print lenght
  *
@@ -14,6 +14,6 @@ int len_num(int number)
 	}
 	else
 	{
-		return (1 + len_num(num / 10));
+		return (1 + len_num(number / 10));
 	}
 }
