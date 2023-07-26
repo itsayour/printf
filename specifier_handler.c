@@ -34,5 +34,6 @@ int specifier_handler(char c, va_list args)
 		count += _putchar('%');
 		count += _putchar(c);
 	}
+	va_end(args);
 	return (count);
 }
