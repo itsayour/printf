@@ -6,7 +6,7 @@
  */
 int handle_number(int num)
 {
-	if (num == -214783648)
+	if (num == -2147483648)
 	{
 		_putchar('-');
 		_putchar('2');
