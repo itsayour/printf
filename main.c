@@ -6,5 +6,5 @@
  */
 int main(void)
 {
-	_printf("hi %s %% %c %r %", "world", '\n');
+	_printf("hi %s %%%%","world", '\n');
 }

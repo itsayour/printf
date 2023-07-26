@@ -19,6 +19,14 @@ int specifier_handler(char c, va_list args)
 	}
 	else if (c == '%')
 		count = _putchar(c);
+	else if (c == 'd' || c == 'i')
+	{
+		int num = va_arg(args, int);
+		if (num < 0)
+			count++;
+		count += len_num(num);
+		handle_number(num);
+	}
 	else if (c == '\0')
 		count += _putchar(c);
 	else
